@@ -10,18 +10,6 @@ const projects = [
         link: '/projects/neptunedive',
         isInternal: true
     },
-    {
-        name: 'Project 2',
-        description: 'A brief description of Project 2',
-        link: '#',
-        isInternal: true
-    },
-    {
-        name: 'Project 3',
-        description: 'A brief description of Project 3',
-        link: '#',
-        isInternal: true
-    },
 ]
 
 export default function Projects() {

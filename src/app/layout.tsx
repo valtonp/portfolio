@@ -25,7 +25,9 @@ export default function RootLayout({
             disableTransitionOnChange
         >
             <div className="flex min-h-screen">
-                <Sidebar/>
+                <div className="w-64 h-screen bg-card border-r sticky top-0">
+                    <Sidebar/>
+                </div>
                 <main className="flex-1 p-8">
                     {children}
                 </main>
