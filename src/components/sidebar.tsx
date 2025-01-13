@@ -39,7 +39,7 @@ export default function Sidebar() {
                 <div className="mt-auto pt-4 px-4">
                     <div className="flex justify-center space-x-2">
                         <Button variant="outline" size="icon" asChild>
-                            <a href="www.linkedin.com/in/paul-valton-5617a3230" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/paul-valton-5617a3230" target="_blank" rel="noopener noreferrer">
                                 <Linkedin className="h-6 w-6" />
                                 <span className="sr-only">LinkedIn</span>
                             </a>
