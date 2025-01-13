@@ -57,7 +57,7 @@ export default function NeptuneDiveProject() {
                         <li><b>Gestion des adhérents :</b> Stockage des informations telles que les coordonnées, licences, certificats médicaux, niveaux, et cotisations.</li>
                         <li><b>Suivi des formations :</b> Création et partage de fiches de suivi entre les moniteurs pour suivre la progression des plongeurs en formation.</li>
                         <li><b>Fiches de sécurité :</b> Simplification et automatisation de la création de fiches obligatoires pour chaque plongée, en conformité avec la réglementation.</li>
-                        <li><b>Centralisation des outils :</b> Intégration des fonctionnalités de paiement (comme HelloAsso), d'organisation des sorties (comme Spond), et de gestion financière (remplaçant les fichiers Excel).</li>
+                        <li><b>Centralisation des outils :</b> Intégration des fonctionnalités de paiement (comme HelloAsso), d&apos;organisation des sorties (comme Spond), et de gestion financière (remplaçant les fichiers Excel).</li>
                     </ul>
                 </CardContent>
             </Card>
