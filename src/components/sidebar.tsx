@@ -4,11 +4,12 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import { Github, Linkedin } from 'lucide-react'
 
 const navItems = [
-    { name: 'Home', href: '/' },
+    { name: 'Accueil', href: '/' },
+    { name: 'Projets', href: '/projects' },
     { name: 'CV', href: '/cv' },
-    { name: 'Projects', href: '/projects' },
     { name: 'Contact', href: '/contact' },
 ]
 
@@ -17,10 +18,10 @@ export default function Sidebar() {
 
     return (
         <nav className="w-64 bg-card text-card-foreground border-r">
-            <ScrollArea className="h-full py-6">
+            <ScrollArea className="h-full py-6 flex flex-col">
                 <div className="px-3 py-2">
                     <h2 className="mb-8 px-4 text-2xl font-semibold tracking-tight">
-                        Your Name
+                        Paul Valton
                     </h2>
                     <div className="space-y-1">
                         {navItems.map((item) => (
@@ -33,6 +34,22 @@ export default function Sidebar() {
                                 <Link href={item.href}>{item.name}</Link>
                             </Button>
                         ))}
+                    </div>
+                </div>
+                <div className="mt-auto pt-4 px-4">
+                    <div className="flex justify-center space-x-2">
+                        <Button variant="outline" size="icon" asChild>
+                            <a href="www.linkedin.com/in/paul-valton-5617a3230" target="_blank" rel="noopener noreferrer">
+                                <Linkedin className="h-6 w-6" />
+                                <span className="sr-only">LinkedIn</span>
+                            </a>
+                        </Button>
+                        <Button variant="outline" size="icon" asChild>
+                            <a href="https://github.com/valtonp" target="_blank" rel="noopener noreferrer">
+                                <Github className="h-6 w-6" />
+                                <span className="sr-only">GitHub</span>
+                            </a>
+                        </Button>
                     </div>
                 </div>
             </ScrollArea>

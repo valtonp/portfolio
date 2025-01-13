@@ -1,11 +1,27 @@
 import { ExternalLinkIcon } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import Link from 'next/link'
 
 const projects = [
-    { name: 'Project 1', description: 'A brief description of Project 1', link: '#' },
-    { name: 'Project 2', description: 'A brief description of Project 2', link: '#' },
-    { name: 'Project 3', description: 'A brief description of Project 3', link: '#' },
+    {
+        name: 'NeptuneDive',
+        description: 'Une application web de gestion de sortie de plongée',
+        link: '/projects/neptunedive',
+        isInternal: true
+    },
+    {
+        name: 'Project 2',
+        description: 'A brief description of Project 2',
+        link: '#',
+        isInternal: true
+    },
+    {
+        name: 'Project 3',
+        description: 'A brief description of Project 3',
+        link: '#',
+        isInternal: true
+    },
 ]
 
 export default function Projects() {
@@ -23,14 +39,21 @@ export default function Projects() {
                         </CardContent>
                         <CardFooter>
                             <Button asChild variant="outline">
-                                <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    View Project
-                                    <ExternalLinkIcon className="ml-2 h-4 w-4" />
-                                </a>
+                                {project.isInternal ? (
+                                    <Link href={project.link}>
+                                        Voir le projet
+                                        <ExternalLinkIcon className="ml-2 h-4 w-4" />
+                                    </Link>
+                                ) : (
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Voir le projet
+                                        <ExternalLinkIcon className="ml-2 h-4 w-4" />
+                                    </a>
+                                )}
                             </Button>
                         </CardFooter>
                     </Card>

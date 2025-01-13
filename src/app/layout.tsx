@@ -6,8 +6,8 @@ import Sidebar from '../components/sidebar'
 const inter = Inter({subsets: ['latin']})
 
 export const metadata = {
-    title: 'Cold Portfolio',
-    description: 'A simple and original portfolio with cold colors',
+    title: 'Paulfolio',
+    description: 'Mon portfolio',
 }
 
 export default function RootLayout({
@@ -26,7 +26,9 @@ export default function RootLayout({
         >
             <div className="flex min-h-screen">
                 <Sidebar/>
-                <main className="flex-1 p-8">{children}</main>
+                <main className="flex-1 p-8">
+                    {children}
+                </main>
             </div>
         </ThemeProvider>
         </body>

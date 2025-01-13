@@ -9,29 +9,28 @@ export default function Contact() {
         <div className="max-w-xl mx-auto">
             <Card>
                 <CardHeader>
-                    <CardTitle>Contact Me</CardTitle>
-                    <CardDescription>Fill out the form below to get in touch.</CardDescription>
+                    <CardTitle>Me contacter</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <form>
                         <div className="grid w-full items-center gap-4">
                             <div className="flex flex-col space-y-1.5">
-                                <Label htmlFor="name">Name</Label>
-                                <Input id="name" name="name" placeholder="Your name" required />
+                                <Label htmlFor="name">Nom</Label>
+                                <Input id="name" name="name" placeholder="Nom" required />
                             </div>
                             <div className="flex flex-col space-y-1.5">
-                                <Label htmlFor="email">Email</Label>
-                                <Input id="email" name="email" type="email" placeholder="Your email" required />
+                                <Label htmlFor="email">E-mail</Label>
+                                <Input id="email" name="email" type="email" placeholder="E-mail" required />
                             </div>
                             <div className="flex flex-col space-y-1.5">
                                 <Label htmlFor="message">Message</Label>
-                                <Textarea id="message" name="message" placeholder="Your message" required />
+                                <Textarea id="message" name="message" placeholder="Votre message" required />
                             </div>
                         </div>
                     </form>
                 </CardContent>
                 <CardFooter>
-                    <Button type="submit" className="w-full">Send Message</Button>
+                    <Button type="submit" className="w-full">Envoyer message</Button>
                 </CardFooter>
             </Card>
         </div>
