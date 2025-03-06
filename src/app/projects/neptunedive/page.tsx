@@ -64,20 +64,20 @@ export default function NeptuneDiveProject() {
 
             <Card>
                 <CardHeader>
-                    <CardTitle>Project Screenshots</CardTitle>
+                    <CardTitle>Screenshots</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Image
                             src="/ecotrack-dashboard.png"
-                            alt="EcoTrack Dashboard"
+                            alt="Dashboard"
                             width={500}
                             height={300}
                             className="rounded-lg object-cover w-full"
                         />
                         <Image
                             src="/ecotrack-recommendations.png"
-                            alt="EcoTrack Recommendations"
+                            alt="Recommendations"
                             width={500}
                             height={300}
                             className="rounded-lg object-cover w-full"
@@ -86,39 +86,39 @@ export default function NeptuneDiveProject() {
                 </CardContent>
             </Card>
 
-            <Card>
-                <CardHeader>
-                    <CardTitle>Technical Challenges</CardTitle>
-                </CardHeader>
-                <CardContent>
-                    <p className="mb-4">
-                        During the development of EcoTrack, we faced several technical challenges:
-                    </p>
-                    <ul className="list-disc pl-6 space-y-2">
-                        <li>Implementing real-time data processing for energy consumption tracking</li>
-                        <li>Developing accurate machine learning models for personalized recommendations</li>
-                        <li>Ensuring data privacy and security for user information</li>
-                        <li>Optimizing performance for handling large datasets and concurrent users</li>
-                    </ul>
-                </CardContent>
-            </Card>
+            {/*<Card>*/}
+            {/*    <CardHeader>*/}
+            {/*        <CardTitle>Technical Challenges</CardTitle>*/}
+            {/*    </CardHeader>*/}
+            {/*    <CardContent>*/}
+            {/*        <p className="mb-4">*/}
+            {/*            During the development of EcoTrack, we faced several technical challenges:*/}
+            {/*        </p>*/}
+            {/*        <ul className="list-disc pl-6 space-y-2">*/}
+            {/*            <li>Implementing real-time data processing for energy consumption tracking</li>*/}
+            {/*            <li>Developing accurate machine learning models for personalized recommendations</li>*/}
+            {/*            <li>Ensuring data privacy and security for user information</li>*/}
+            {/*            <li>Optimizing performance for handling large datasets and concurrent users</li>*/}
+            {/*        </ul>*/}
+            {/*    </CardContent>*/}
+            {/*</Card>*/}
 
-            <Card>
-                <CardHeader>
-                    <CardTitle>Lessons Learned</CardTitle>
-                </CardHeader>
-                <CardContent>
-                    <p className="mb-4">
-                        The development of EcoTrack provided valuable insights and learning experiences:
-                    </p>
-                    <ul className="list-disc pl-6 space-y-2">
-                        <li>Importance of user-centered design in promoting sustainable behaviors</li>
-                        <li>Challenges and opportunities in integrating IoT devices with web applications</li>
-                        <li>Balancing feature richness with application performance and simplicity</li>
-                        <li>Effective strategies for motivating users through gamification and social features</li>
-                    </ul>
-                </CardContent>
-            </Card>
+            {/*<Card>*/}
+            {/*    <CardHeader>*/}
+            {/*        <CardTitle>Lessons Learned</CardTitle>*/}
+            {/*    </CardHeader>*/}
+            {/*    <CardContent>*/}
+            {/*        <p className="mb-4">*/}
+            {/*            The development of EcoTrack provided valuable insights and learning experiences:*/}
+            {/*        </p>*/}
+            {/*        <ul className="list-disc pl-6 space-y-2">*/}
+            {/*            <li>Importance of user-centered design in promoting sustainable behaviors</li>*/}
+            {/*            <li>Challenges and opportunities in integrating IoT devices with web applications</li>*/}
+            {/*            <li>Balancing feature richness with application performance and simplicity</li>*/}
+            {/*            <li>Effective strategies for motivating users through gamification and social features</li>*/}
+            {/*        </ul>*/}
+            {/*    </CardContent>*/}
+            {/*</Card>*/}
         </div>
     )
 }

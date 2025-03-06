@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import {usePathname} from 'next/navigation'
 import {Button} from "@/components/ui/button"
-import {Github, Linkedin} from 'lucide-react'
+import {Github, Linkedin, Mail} from 'lucide-react'
 
 const navItems = [
     {name: 'Accueil', href: '/'},
