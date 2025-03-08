@@ -1,23 +1,27 @@
 import type React from "react"
 import "./globals.css"
-import type {Metadata} from "next"
-import {Inter} from "next/font/google"
-import IntroAnimation from "@/components/animation/intro-animation";
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import { ThemeProvider } from "@/components/layout/theme-provider"
 
-const inter = Inter({subsets: ["latin"]})
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-    title: "Paulfolio",
-    description: "Personal portfolio of Valton Paul, Full Stack Developer",
+    title: "Paul Valton | Portfolio",
+    description: "Portfolio de Paul Valton, Développeur Full Stack",
 }
 
-export default function RootLayout({children}: { children: React.ReactNode })
-{
+export default function RootLayout({
+                                       children,
+                                   }: {
+    children: React.ReactNode
+}) {
     return (
-        <html lang="fr">
+        <html lang="fr" suppressHydrationWarning>
         <body className={inter.className}>
-        {/*<IntroAnimation/>*/}
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+            {children}
+        </ThemeProvider>
         </body>
         </html>
     )
