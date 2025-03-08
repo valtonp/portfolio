@@ -18,14 +18,16 @@ export default function Portfolio() {
     }, [])
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
+        <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900
+        dark:to-gray-800 transition-colors duration-300 overflow-hidden">
             {/* Theme toggle */}
             {mounted && (
                 <div className="fixed top-4 right-4 z-50">
                     <Button
                         variant="outline"
                         size="icon"
-                        className="rounded-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-md hover:shadow-lg transition-all duration-300"
+                        className="rounded-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-md
+                        hover:shadow-lg transition-all duration-300"
                         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                     >
                         {theme === "dark" ? (
@@ -38,7 +40,7 @@ export default function Portfolio() {
                 </div>
             )}
 
-            <div className="w-full p-8 md:px-4 lg:px-8 max-w-[95rem] mx-auto overflow-hidden">
+            <div className="w-full p-8 md:px-4 lg:px-8 max-w-[95rem] mx-auto">
             <div className="flex flex-col lg:flex-row gap-8">
                     <Sidebar />
                     <MainContent />
