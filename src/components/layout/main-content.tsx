@@ -26,7 +26,7 @@ import ProjectCard from "@/components/layout/project-card"
 import TimelineItem from "@/components/layout/timeline-item"
 
 export default function MainContent() {
-    const [activeTab, setActiveTab] = useState("qualifications")
+    const [activeTab, setActiveTab] = useState("parcours")
 
     const projects = [
         {
@@ -113,14 +113,15 @@ export default function MainContent() {
 
     return (
         <Card className="lg:w-2/3 xl:w-3/4 bg-white dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden h-full">
-            <Tabs defaultValue="qualifications" value={activeTab} onValueChange={setActiveTab} className="w-full">
+            <Tabs defaultValue="parcours" value={activeTab} onValueChange={setActiveTab} className="w-full">
+                {/* Menu */}
                 <div className="border-b border-gray-200 dark:border-gray-700">
-                    <TabsList className="w-full justify-start rounded-none bg-transparent border-b-0 p-0">
+                    <TabsList className="w-full justify-end rounded-none bg-transparent border-b-0 p-0">
                         <TabsTrigger
-                            value="qualifications"
+                            value="parcours"
                             className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-6 py-3 text-base font-medium transition-all"
                         >
-                            Qualifications
+                            Parcours
                         </TabsTrigger>
                         <TabsTrigger
                             value="projects"
@@ -151,7 +152,7 @@ export default function MainContent() {
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2 }}
                     >
-                        <TabsContent value="qualifications" className="p-6 mt-0">
+                        <TabsContent value="parcours" className="p-6 mt-0">
                             <div className="space-y-8">
                                 <div>
                                     <h2 className="text-2xl font-bold mb-6 inline-block bg-clip-text text-transparent bg-gradient-to-r from-primary to-indigo-600">
