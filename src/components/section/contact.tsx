@@ -1,5 +1,6 @@
 import { TabsContent } from "@/components/ui/tabs";
 import { Linkedin, Mail, MapPin } from "lucide-react";
+import {ElementType} from "react";
 
 export default function Contact() {
     return (
@@ -37,7 +38,7 @@ export default function Contact() {
     );
 }
 
-const ContactItem = ({ icon: Icon, title, content }: { icon: any; title: string; content: string }) => (
+const ContactItem = ({ icon: Icon, title, content }: { icon: ElementType; title: string; content: string }) => (
     <div className="flex items-start gap-3">
         <div className="bg-primary/10 p-2 rounded-full text-primary">
             <Icon className="h-5 w-5" />
