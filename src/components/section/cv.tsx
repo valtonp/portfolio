@@ -3,14 +3,14 @@ import {TabsContent} from "@/components/ui/tabs";
 
 export default function CV(){
     return (
-        <TabsContent value="cv" className="p-6 mt-0 flex flex-col items-center gap-4">
-            <div className="w-full max-w-xl">
+        <TabsContent value="cv" className="mt-0 flex flex-col items-center">
+            <div className="w-full max-w-xl p-6">
                 <Image
                     src="/images/CV_valton_paul.png"
                     alt="CV"
                     width={800}
-                    height={1130}
-                    className="w-full h-auto rounded-lg shadow-md"
+                    height={1280}
+                    className="w-full rounded-lg shadow-md"
                 />
             </div>
         </TabsContent>
