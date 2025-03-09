@@ -15,7 +15,7 @@ export default function TimelineItem({ title, subtitle, date, description, icon 
             rounded-full p-1 group-hover:scale-110 transition-transform duration-200">
                 <div className="text-primary">{icon}</div>
             </div>
-            <div className="absolute left-[8px] top-10 h-24 w-[2px] bg-primary/20 dark:bg-primary/10"></div>
+            <div className="absolute left-[8px] top-10 h-16 w-[2px] bg-primary/20 dark:bg-primary/10"></div>
             <div className="space-y-1 space-x">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                     <h4 className="font-medium">{title}</h4>

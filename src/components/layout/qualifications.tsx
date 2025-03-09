@@ -1,7 +1,5 @@
-import {Code, ExternalLink, FileText, GraduationCap} from "lucide-react";
+import {Code, FileText, GraduationCap} from "lucide-react";
 import TimelineItem from "@/components/layout/timeline-item";
-import {Card, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
-import {Button} from "@/components/ui/button";
 import {TabsContent} from "@/components/ui/tabs";
 
 const education = [
@@ -9,16 +7,16 @@ const education = [
         id: 1,
         title: "BUT Informatique",
         institution: "IUT de Montpellier-Sète",
-        date: "2021 - 2024",
+        date: "2021 - 2025",
         description: "Spécialité Réalisation d'Applications : Conception, Développement, Validation (RACDV)",
         icon: <GraduationCap className="h-5 w-5" />,
     },
     {
         id: 2,
-        title: "Baccalauréat Général",
-        institution: "Lycée Jean Monnet, Montpellier",
-        date: "2018 - 2021",
-        description: "Spécialités Mathématiques et Numérique et Sciences Informatiques (NSI)",
+        title: "Baccalauréat Technologie",
+        institution: "Lycée Jean-François Champollion, Montpellier",
+        date: "2021",
+        description: "STI2D, Spécialités Systèmes d'Information et Numérique (SIN)",
         icon: <GraduationCap className="h-5 w-5" />,
     },
 ]
@@ -26,19 +24,12 @@ const education = [
 const experience = [
     {
         id: 1,
-        title: "Développeur Full Stack",
-        company: "Entreprise XYZ",
-        date: "Juin 2023 - Août 2023",
+        title: "Conception de processus métier",
+        company: "Nexecur",
+        date: "Avril 2024 - Juin 2024",
         description:
-            "Stage de développement web. Conception et développement d'une application web avec React et Node.js.",
-        icon: <Code className="h-5 w-5" />,
-    },
-    {
-        id: 2,
-        title: "Développeur Front-end",
-        company: "Startup ABC",
-        date: "Juin 2022 - Août 2022",
-        description: "Stage d'été. Développement d'interfaces utilisateur avec Vue.js et intégration d'API REST.",
+            "Amélioration de l’organisation de l’entreprise par la conception\n" +
+            "et mise en œuvre de process métiers automatisés.",
         icon: <Code className="h-5 w-5" />,
     },
 ]
@@ -100,33 +91,33 @@ export default function Qualifications() {
                         <FileText className="h-5 w-5 text-primary"/>
                         Certifications
                     </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <Card>
-                            <CardHeader className="pb-2">
-                                <CardTitle className="text-base">AWS Certified Developer</CardTitle>
-                                <CardDescription>Amazon Web Services, 2023</CardDescription>
-                            </CardHeader>
-                            <CardFooter className="pt-2">
-                                <Button variant="outline" size="sm" className="gap-1">
-                                    <ExternalLink className="h-3.5 w-3.5"/>
-                                    <span>Voir le certificat</span>
-                                </Button>
-                            </CardFooter>
-                        </Card>
+                    {/*<div className="grid grid-cols-1 md:grid-cols-2 gap-4">*/}
+                    {/*    <Card>*/}
+                    {/*        <CardHeader className="pb-2">*/}
+                    {/*            <CardTitle className="text-base">AWS Certified Developer</CardTitle>*/}
+                    {/*            <CardDescription>Amazon Web Services, 2023</CardDescription>*/}
+                    {/*        </CardHeader>*/}
+                    {/*        <CardFooter className="pt-2">*/}
+                    {/*            <Button variant="outline" size="sm" className="gap-1">*/}
+                    {/*                <ExternalLink className="h-3.5 w-3.5"/>*/}
+                    {/*                <span>Voir le certificat</span>*/}
+                    {/*            </Button>*/}
+                    {/*        </CardFooter>*/}
+                    {/*    </Card>*/}
 
-                        <Card>
-                            <CardHeader className="pb-2">
-                                <CardTitle className="text-base">React Developer Certification</CardTitle>
-                                <CardDescription>Meta, 2022</CardDescription>
-                            </CardHeader>
-                            <CardFooter className="pt-2">
-                                <Button variant="outline" size="sm" className="gap-1">
-                                    <ExternalLink className="h-3.5 w-3.5"/>
-                                    <span>Voir le certificat</span>
-                                </Button>
-                            </CardFooter>
-                        </Card>
-                    </div>
+                    {/*    <Card>*/}
+                    {/*        <CardHeader className="pb-2">*/}
+                    {/*            <CardTitle className="text-base">React Developer Certification</CardTitle>*/}
+                    {/*            <CardDescription>Meta, 2022</CardDescription>*/}
+                    {/*        </CardHeader>*/}
+                    {/*        <CardFooter className="pt-2">*/}
+                    {/*            <Button variant="outline" size="sm" className="gap-1">*/}
+                    {/*                <ExternalLink className="h-3.5 w-3.5"/>*/}
+                    {/*                <span>Voir le certificat</span>*/}
+                    {/*            </Button>*/}
+                    {/*        </CardFooter>*/}
+                    {/*    </Card>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </TabsContent>

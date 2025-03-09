@@ -1,5 +1,5 @@
-import {skillCategories, skills} from "@/data/skills";
-import {Badge} from "@/components/ui/badge";
+import SkillBadge from "@/components/ui/skill-badge";
+import { skills } from "@/data/skills";
 
 export default function SkillsList(){
     return (
@@ -10,14 +10,7 @@ export default function SkillsList(){
             </h2>
             <div className="flex flex-wrap gap-1.5">
                 {skills.map((skill) => (
-                    <Badge
-                        key={skill.name}
-                        variant="outline"
-                        className={`${skillCategories[skill.category as keyof typeof skillCategories]}
-                                     text-xs hover:scale-105 transition-transform duration-200`}
-                    >
-                        {skill.name}
-                    </Badge>
+                    <SkillBadge skill={skill} key={skill.name}/>
                 ))}
             </div>
         </div>
