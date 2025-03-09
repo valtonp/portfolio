@@ -1,10 +1,8 @@
-import { Download } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import ProfileHeader from "@/components/section/profile-header";
-import MediaButton from "@/components/section/media-button";
 import SkillsList from "@/components/section/skills-list";
 import Languages from "@/components/section/languages";
+import DownloadButton from "@/components/ui/download-button";
 
 export default function Sidebar() {
     return (
@@ -15,14 +13,7 @@ export default function Sidebar() {
 
                     <ProfileHeader />
 
-                    {/* Action Buttons */}
-                    <div className="flex gap-3 w-full items-center justify-center">
-                        <Button className="flex-1 gap-2 max-w-32 mr-3" size="sm">
-                            <Download className="h-4 w-4" />
-                            <span>CV</span>
-                        </Button>
-                        <MediaButton />
-                    </div>
+                    <DownloadButton link="/images/CV_valton_paul.pdf"/>
 
                     {/* About Me */}
                     <div className="space-y-3 w-full">

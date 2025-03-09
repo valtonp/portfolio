@@ -1,0 +1,43 @@
+export const projects = [
+    {
+        id: 1,
+        title: "E-commerce Platform",
+        description:
+            "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
+        image: "/placeholder.svg?height=300&width=500&text=E-commerce+Platform",
+        technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+        demoUrl: "#",
+        githubUrl: "#",
+        featured: true,
+    },
+    {
+        id: 2,
+        title: "Portfolio Website",
+        description: "A responsive portfolio website showcasing projects and skills with a modern design.",
+        image: "/placeholder.svg?height=300&width=500&text=Portfolio+Website",
+        technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+        demoUrl: "#",
+        githubUrl: "#",
+        featured: true,
+    },
+    {
+        id: 3,
+        title: "Task Management App",
+        description: "A collaborative task management application with real-time updates and team features.",
+        image: "/placeholder.svg?height=300&width=500&text=Task+Management",
+        technologies: ["React", "Firebase", "Material UI"],
+        demoUrl: "#",
+        githubUrl: "#",
+        featured: false,
+    },
+    {
+        id: 4,
+        title: "Weather Dashboard",
+        description: "An interactive weather dashboard displaying forecasts and historical weather data.",
+        image: "/placeholder.svg?height=300&width=500&text=Weather+Dashboard",
+        technologies: ["JavaScript", "Chart.js", "Weather API"],
+        demoUrl: "#",
+        githubUrl: "#",
+        featured: false,
+    },
+]
