@@ -60,7 +60,7 @@ export default function MainContent() {
                         <TabsContent value="cv" className="p-6 mt-0 flex flex-col items-center gap-4">
                             <div className="w-full max-w-xl">
                                 <Image
-                                    src="/images/CV_valton_paul.pdf"
+                                    src="/images/CV_valton_paul.png"
                                     alt="CV"
                                     width={800}
                                     height={1130}
@@ -117,7 +117,7 @@ export default function MainContent() {
                                     </div>
 
                                     <div>
-                                        <form className="space-y-4">
+                                        <form className="space-y-4 ">
                                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                                 <div className="space-y-2">
                                                     <Label htmlFor="name">Nom</Label>
