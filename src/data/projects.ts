@@ -8,7 +8,6 @@ export interface Project {
     technologies: Skill[];
 }
 
-
 export const projects: Project[] = [
     {
         id: 1,
