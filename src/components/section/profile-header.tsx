@@ -30,7 +30,7 @@ export default function ProfileHeader(){
                 <p className="text-gray-600 dark:text-gray-300 font-medium">Full Stack Developer</p>
                 <div className="flex items-center justify-center text-sm text-gray-500 dark:text-gray-400">
                     <MapPin className="h-4 w-4 mr-1" />
-                    <span>Montpellier, Lattes</span>
+                    <span>Montpellier</span>
                 </div>
             </div>
         </div>
