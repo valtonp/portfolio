@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import {Project} from "@/data/projects";
 import SkillBadge from "@/components/ui/skill-badge";
+import ProjectInfo from "@/components/layout/project-info";
 
 interface ProjectCardProps {
     project: Project
@@ -25,12 +26,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 </div>
             </CardContent>
             <CardFooter className="flex gap-2">
-                <Button variant="default" size="sm" className="gap-1" asChild>
-                    <a href={""} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-3.5 w-3.5" />
-                        <span>Voir plus</span>
-                    </a>
-                </Button>
+                <ProjectInfo />
             </CardFooter>
         </Card>
     )

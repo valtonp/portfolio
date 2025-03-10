@@ -33,7 +33,7 @@ export const projects: Project[] = [
         technologies: [
             { name: "Next.js", category: SkillCategory.Frontend },
             { name: "Tailwind CSS", category: SkillCategory.Frontend },
-            { name: "GitHub", category: SkillCategory.Methodology },
+            { name: "GitHub", category: SkillCategory.Tools },
         ],
     },
 ];

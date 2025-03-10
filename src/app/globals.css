@@ -33,8 +33,6 @@
     --ring: 221.2 83.2% 53.3%;
 
     --radius: 0.5rem;
-
-    --bgtheme: 221.2 83.2% 53.3%;
   }
 
   .dark {
@@ -66,7 +64,6 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
 
-    --bgtheme: 217.2 91.2% 59.8%;
   }
 }
 
@@ -82,8 +79,3 @@
 .bg-gradient-theme {
   @apply bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800;
 }
-
-.bg-bgtheme {
-  @apply bg-[hsl(var(--bgtheme))];
-}
-
