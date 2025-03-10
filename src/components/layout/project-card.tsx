@@ -1,15 +1,16 @@
-import { ExternalLink } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import {Project} from "@/data/projects";
+import {Project} from "@/data/projects/projects";
 import SkillBadge from "@/components/ui/skill-badge";
 import ProjectInfo from "@/components/layout/project-info";
+import getProjectInfo from "@/data/projects/projects-infos";
 
 interface ProjectCardProps {
     project: Project
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+
+    const informations = getProjectInfo(project.infoId)
 
     return (
         <Card className="overflow-hidden border-0 shadow-md hover:shadow-lg transition-all duration-300 group h-full
@@ -26,7 +27,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 </div>
             </CardContent>
             <CardFooter className="flex gap-2">
-                <ProjectInfo />
+                {informations ? (
+                    <ProjectInfo info={informations} title={project.title} skills={project.technologies}/>
+                ) : (
+                    <p className="text-sm">Aucune information</p>
+                )
+                }
             </CardFooter>
         </Card>
     )

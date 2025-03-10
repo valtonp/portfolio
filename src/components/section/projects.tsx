@@ -1,5 +1,5 @@
 import {TabsContent} from "@/components/ui/tabs";
-import {projects} from "@/data/projects";
+import {projects} from "@/data/projects/projects";
 import ProjectCard from "@/components/layout/project-card";
 
 export default function Projects(){

@@ -6,6 +6,7 @@ export interface Project {
     description: string;
     image: string;
     technologies: Skill[];
+    infoId?: number
 }
 
 export const projects: Project[] = [
@@ -24,6 +25,7 @@ export const projects: Project[] = [
             { name: "SCRUM", category: SkillCategory.Methodology },
             { name: "GitLab", category: SkillCategory.Tools },
         ],
+        infoId: 1,
     },
     {
         id: 2,
@@ -35,5 +37,6 @@ export const projects: Project[] = [
             { name: "Tailwind CSS", category: SkillCategory.Frontend },
             { name: "GitHub", category: SkillCategory.Tools },
         ],
+        infoId: 2,
     },
 ];
