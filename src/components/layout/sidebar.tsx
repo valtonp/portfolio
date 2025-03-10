@@ -7,8 +7,8 @@ import DownloadButton from "@/components/ui/download-button";
 export default function Sidebar() {
     return (
         <Card className="basis-1/4 xl:w-1/4 bg-white dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl
-         transition-all duration-300 lg:sticky lg:top-8 h-auto">
-            <CardContent className="p-5">
+         transition-all duration-300 lg:sticky lg:top-8 self-start h-auto">
+        <CardContent className="p-5">
                 <div className="flex flex-col items-center space-y-4">
 
                     <ProfileHeader />

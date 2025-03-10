@@ -40,7 +40,7 @@ export default function Portfolio() {
                 </div>
             )}
 
-            <div className="w-full p-8 md:px-4 lg:px-8 max-w-[95rem] mx-auto">
+            <div className="w-full p-6 md:px-4 lg:px-8 max-w-[95rem] mx-auto">
             <div className="flex flex-col lg:flex-row gap-8">
                     <Sidebar />
                     <MainContent />
