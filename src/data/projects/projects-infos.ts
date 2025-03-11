@@ -10,8 +10,8 @@ export const projectsInfo: ProjectInfoInterface[] = [
     {
         id: 1,
         longDescription:
-            "Neptunedive est une plateforme SaaS dédiée aux clubs de plongée, permettant la gestion des adhérents, des sorties et des réservations en toute simplicité.",
-        involvement: "La",
+            "NeptuneDive est une application web SaaS conçue pour l'organisation et la gestion d'un club de plongée. Son principal objectif est d'unifier plusieurs outils en une seule plateforme et de simplifier l'enregistrement des participants aux différentes sorties. Le projet a été réalisé au sein d'une squad de 4 développeurs.",
+        involvement: "Au début du projet, j'ai mis en place Docker Compose afin de simplifier la gestion des environnements entre les différentes machines de l'équipe. Par la suite, sur le Backend, j'ai créé plusieurs entités avec API Platform. J'ai également implémenté un MultipartDecoder pour permettre l'envoi d'images à l'API en utilisant le format Multipart plutôt que JSON. En collaboration avec un autre développeur, nous avons travaillé sur le SaaS de l'application pour permettre la gestion de plusieurs clubs et des appels de la base de données en fonction de l'URL.",
         images: [
             "/images/neptunedive-1.png",
             "/images/neptunedive-2.png",

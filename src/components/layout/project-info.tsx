@@ -21,10 +21,10 @@ export default function ProjectInfo({info, title, skills}: ProjectInfoProps) {
                     Voir plus
                 </Button>
             </DialogTrigger>
-            <DialogContent className="max-w-3xl p-6 pt-3 space-y-6">
+            <DialogContent className="max-w-3xl pt-3 space-y-2 overflow-auto max-h-[100vh]">
                     {/* Titre du projet */}
                     <DialogHeader>
-                        <DialogTitle className="text-2xl font-bold text-center underline mb-3">{title}</DialogTitle>
+                        <DialogTitle className="text-2xl font-bold text-center underline mt-2">{title}</DialogTitle>
                     </DialogHeader>
 
                     {/* Description Longue */}
@@ -71,7 +71,7 @@ export default function ProjectInfo({info, title, skills}: ProjectInfoProps) {
                     {/* Technologies utilisées */}
                     {skills.length > 0 && (
                         <div>
-                            <h3 className="text-lg font-semibold mt-4">Technologies utilisées</h3>
+                            <h3 className="text-lg font-semibold mt-4">Stack technique et outils</h3>
                             <div className="flex flex-wrap gap-2 mt-2">
                                 {skills.map((skill, index) => (
                                     <SkillBadge key={index} skill={skill}/>
