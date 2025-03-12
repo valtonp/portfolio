@@ -24,17 +24,17 @@ export function CarouselModal({ open, setOpen, currentImage, images }: CarouselM
                 <Carousel className="w-full pl-6 pr-6">
                     <CarouselContent className="w-full">
                         {sortedImages.map((img, index) => (
-                            <CarouselItem key={index} className="flex justify-center w-full p-6">
+                            <CarouselItem key={index} className="flex justify-center w-full">
                                 <Image
                                     src={img}
                                     alt={`Image ${index + 1}`}
-                                    width={1600}
-                                    height={900}
-                                    className="w-full h-[500px] object-cover"
+                                    width={1920}
+                                    height={1080}
+                                    layout="intrinsic"
+                                    className="object-fill"
                                 />
                             </CarouselItem>
                         ))}
-
                     </CarouselContent>
                     <CarouselPrevious />
                     <CarouselNext />

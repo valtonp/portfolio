@@ -27,10 +27,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 </div>
             </CardContent>
             <CardFooter className="flex gap-2">
-                {informations ? (
+                {informations && project.title !== "Portfolio" ? (
                     <ProjectInfo info={informations} title={project.title} skills={project.technologies}/>
                 ) : (
-                    <p className="text-sm">Aucune information</p>
+                    <p></p>
                 )
                 }
             </CardFooter>

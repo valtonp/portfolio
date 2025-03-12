@@ -34,6 +34,20 @@ export const projects: Project[] = [
             { name: "Tailwind CSS", category: SkillCategory.Frontend },
             { name: "GitHub", category: SkillCategory.Tools },
         ],
+    },
+    {
+        id: 3,
+        title: "Stagia",
+        description:
+            "Application web",
+        technologies: [
+            { name: "Twig", category: SkillCategory.Frontend },
+            { name: "PHP", category: SkillCategory.Backend },
+            { name: "MySQL", category: SkillCategory.Database },
+            { name: "Bootstrap", category: SkillCategory.Frontend },
+            { name: "SCRUM", category: SkillCategory.Methodology },
+            { name: "GitLab", category: SkillCategory.Tools },
+        ],
         infoId: 2,
     },
 ];

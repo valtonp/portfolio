@@ -40,23 +40,16 @@ export default function ProjectInfo({info, title, skills}: ProjectInfoProps) {
                 {/* Description Longue */}
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{info.longDescription}</p>
 
-                {/* Mon implication */}
-                <div>
-                    <h3 className="text-lg font-semibold mt-4 mb-1 underline">Mon implication</h3>
-                    <p className="text-gray-700 dark:text-gray-300">{info.involvement}</p>
-                </div>
-
                 {/* Carrousel d'Images */}
                 {info.images.length > 0 && (
                     <div className="flex gap-3 overflow-x-auto py-4">
                         {info.images.map((img, index) => (
-                            <div key={index} className="relative w-40 h-28 flex-shrink-0">
+                            <div key={index} className="relative w-80 h-52 flex-shrink-0">
                                 <Image
                                     src={img}
                                     alt={`Image ${index + 1} du projet`}
                                     layout="fill"
-                                    objectFit="cover"
-                                    className="rounded-lg border shadow hover:scale-110 hover:opacity-80 cursor-pointer"
+                                    className="rounded-lg border shadow hover:scale-105 hover:opacity-80 cursor-pointer object-cover"
                                     onClick={() => launchCarousel(img)}
                                 />
                             </div>
