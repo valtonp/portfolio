@@ -1,5 +1,5 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Image from "next/image";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
@@ -15,19 +15,26 @@ export function CarouselModal({ open, setOpen, currentImage, images }: CarouselM
 
     return (
         <Dialog open={open} onOpenChange={setOpen}>
-            <DialogContent>
+            <DialogContent className="max-w-5xl w-full h-fit">
                 <DialogHeader>
                     <VisuallyHidden>
                         <DialogTitle>Image Gallery</DialogTitle>
                     </VisuallyHidden>
                 </DialogHeader>
-                <Carousel className="w-full max-w-xs">
-                    <CarouselContent>
+                <Carousel className="w-full pl-6 pr-6">
+                    <CarouselContent className="w-full">
                         {sortedImages.map((img, index) => (
-                            <CarouselItem key={index} className="flex justify-center">
-                                <Image src={img} alt={`Image ${index + 1}`} width={1280} height={900} />
+                            <CarouselItem key={index} className="flex justify-center w-full p-6">
+                                <Image
+                                    src={img}
+                                    alt={`Image ${index + 1}`}
+                                    width={1600}
+                                    height={900}
+                                    className="w-full h-[500px] object-cover"
+                                />
                             </CarouselItem>
                         ))}
+
                     </CarouselContent>
                     <CarouselPrevious />
                     <CarouselNext />
