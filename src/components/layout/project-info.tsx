@@ -41,7 +41,7 @@ export default function ProjectInfo({info, title, skills}: ProjectInfoProps) {
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{info.longDescription}</p>
 
                 {/* Carrousel d'Images */}
-                {info.images.length > 0 && (
+                {info.images ? (
                     <div className="flex gap-3 overflow-x-auto py-4">
                         {info.images.map((img, index) => (
                             <div key={index} className="relative w-80 h-52 flex-shrink-0">
@@ -54,9 +54,13 @@ export default function ProjectInfo({info, title, skills}: ProjectInfoProps) {
                                 />
                             </div>
                         ))}
+                        <CarouselModal open={openCarousel} setOpen={setOpenCarousel} currentImage={currentImage} images={info.images} />
                     </div>
-                )}
-                <CarouselModal open={openCarousel} setOpen={setOpenCarousel} currentImage={currentImage} images={info.images} />
+
+                ) : (
+                        <p className="italic opacity-60">Aucune image pour se projet</p>
+
+                    )}
 
                 {/* Fonctionnalités */}
                 {info.features.length > 0 && (

@@ -39,9 +39,9 @@ export const projects: Project[] = [
         id: 3,
         title: "Stagia",
         description:
-            "Application web",
+            "Application web de gestion de stage et d'alternance pour l'université.",
         technologies: [
-            { name: "Twig", category: SkillCategory.Frontend },
+            { name: "HTML/CSS", category: SkillCategory.Frontend },
             { name: "PHP", category: SkillCategory.Backend },
             { name: "MySQL", category: SkillCategory.Database },
             { name: "Bootstrap", category: SkillCategory.Frontend },
