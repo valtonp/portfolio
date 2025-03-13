@@ -5,9 +5,13 @@ export interface Project {
     title: string;
     description: string;
     technologies: Skill[];
-    infoId?: number
+    onGoing: boolean,
+    infoId?: number,
 }
 
+/**
+ *      Order by index of projects
+ */
 export const projects: Project[] = [
     {
         id: 1,
@@ -23,6 +27,7 @@ export const projects: Project[] = [
             { name: "SCRUM", category: SkillCategory.Methodology },
             { name: "GitLab", category: SkillCategory.Tools },
         ],
+        onGoing : false,
         infoId: 1,
     },
     {
@@ -34,6 +39,7 @@ export const projects: Project[] = [
             { name: "Tailwind CSS", category: SkillCategory.Frontend },
             { name: "GitHub", category: SkillCategory.Tools },
         ],
+        onGoing : false,
     },
     {
         id: 3,
@@ -48,6 +54,20 @@ export const projects: Project[] = [
             { name: "SCRUM", category: SkillCategory.Methodology },
             { name: "GitLab", category: SkillCategory.Tools },
         ],
+        onGoing : false,
         infoId: 2,
+    },
+    {
+        id: 4,
+        title: "Les Aventuriers du Rail - Autour du Monde",
+        description:
+            "Jeux de société",
+        technologies: [
+            { name: "JavaFX", category: SkillCategory.Frontend },
+            { name: "Java", category: SkillCategory.Backend },
+            { name: "GitLab", category: SkillCategory.Tools },
+        ],
+        onGoing : false,
+        infoId: 3,
     },
 ];

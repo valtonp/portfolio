@@ -30,7 +30,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 {informations && project.title !== "Portfolio" ? (
                     <ProjectInfo info={informations} title={project.title} skills={project.technologies}/>
                 ) : (
-                    <p></p>
+                    project.onGoing ? (
+                        <p>Projet en cours</p>
+                    ) : (
+                        <p></p>
+                    )
                 )
                 }
             </CardFooter>
