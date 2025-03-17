@@ -14,6 +14,20 @@ export interface Project {
  */
 export const projects: Project[] = [
     {
+        id: 5,
+        title: "FinRecords",
+        description:
+            "Application web et mobile de gestion des dépenses et de wallet.",
+        technologies: [
+            { name: "Next.js", category: SkillCategory.Frontend },
+            { name: "NestJS", category: SkillCategory.Backend },
+            { name: "SQLite", category: SkillCategory.Database },
+            { name: "Tailwind", category: SkillCategory.Frontend },
+            { name: "GitHub", category: SkillCategory.Tools },
+        ],
+        onGoing : true,
+    },
+    {
         id: 1,
         title: "Neptunedive",
         description:
@@ -70,4 +84,5 @@ export const projects: Project[] = [
         onGoing : false,
         infoId: 3,
     },
+
 ];
