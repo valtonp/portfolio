@@ -13,7 +13,7 @@ export default function ProfileHeader(){
                          dark:border-gray-800">
                     <Image
                         src="/placeholder.svg?height=128&width=128"
-                        alt="Picture"
+                        alt="P"
                         className="w-full h-full object-cover"
                         width={128}
                         height={128}
