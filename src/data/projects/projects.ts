@@ -17,7 +17,7 @@ export const projects: Project[] = [
         id: 5,
         title: "FinRecords",
         description:
-            "Application web et mobile de gestion des dépenses et de wallet.",
+            "Application web et mobile pour la gestion des dépenses et des portefeuilles.",
         technologies: [
             { name: "Next.js", category: SkillCategory.Frontend },
             { name: "NestJS", category: SkillCategory.Backend },
