@@ -52,10 +52,13 @@ export const projectsInfo: ProjectInfoInterface[] = [
         longDescription:
             "Cette version étendue d’un célèbre jeu de société permet aux joueurs de construire des routes ferroviaires et maritimes pour relier des destinations à travers le globe. À l’aide de cartes de transport, ils doivent compléter leurs billets de destination en reliant des villes avec des trains et des bateaux. À chaque tour, ils peuvent piocher des cartes, construire une route ou prendre de nouveaux objectifs. Le but est d’optimiser ses trajets tout en bloquant ses adversaires. Nous avons réalisé ce projet à deux.",
         challenges: [
-            "Lire, extraire et enregistrer les données d'un fichier Excel en PHP.",
+            "Découverte du frontend",
+            "Faire une interface ergonomique",
+            "Gestion des animations et interactions",
         ],
         features: [
             "Choisir le nombre de joueurs et adapter la partie",
+            "Personnalisation des avatars",
         ],
     },
 ];
