@@ -24,6 +24,7 @@ export const projects: Project[] = [
             { name: "SQLite", category: SkillCategory.Database },
             { name: "Tailwind", category: SkillCategory.Frontend },
             { name: "GitHub", category: SkillCategory.Tools },
+            { name: "CI/CD", category: SkillCategory.Tools },
         ],
         onGoing : true,
     },
