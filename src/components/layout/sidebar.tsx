@@ -22,10 +22,10 @@ export default function Sidebar() {
                             À propos de moi
                         </h2>
                         <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
-                            Étudiant de 3ème année de BUT Informatique, spécialité Réalisation d&#39;Applications
-                            (RACDV), je suis passionné par le développement web et la création d&#39;applications
-                            modernes et intuitives. Curieux et déterminé, je cherche constamment à améliorer mes
-                            compétences techniques et à relever de nouveaux défis dans un domaine en constante évolution.
+                            Étudiant en 3ᵉ année de BUT Informatique (RACDV), je cherche à relever de nouveaux défis
+                            au travers du développement et de la création de solutions innovantes.
+                            Curieux et déterminé, j’explore différents domaines de l’informatique, du développement
+                            applicatif à l’architecture logicielle, afin de continuer à apprendre et progresser.
                         </p>
                     </div>
 
