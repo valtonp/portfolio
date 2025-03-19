@@ -7,9 +7,17 @@ import {ThemeProvider} from "@/components/layout/theme-provider"
 const inter = Inter({subsets: ["latin"]})
 
 export const metadata: Metadata = {
-    title: "Paul Valton | Portfolio",
-    description: "Portfolio Paul Valton, Développeur Full Stack",
-}
+    title: "Paul Valton | Développeur Full Stack",
+    description: "Portfolio de Paul Valton, développeur full stack",
+    keywords: "Paul Valton, Développeur Full Stack, Next.js, NestJS, JavaScript, TypeScript, Portfolio",
+    openGraph: {
+        title: "Paul Valton | Développeur Full Stack",
+        description: "Découvrez mon portfolio de développeur full stack spécialisé en Next.js, NestJS et Tailwind.",
+        url: "https://mypaulfolio.vercel.app/",
+        siteName: "Paul Valton Portfolio",
+        type: "website",
+    },
+};
 
 export default function RootLayout({
                                        children,

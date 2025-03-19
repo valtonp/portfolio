@@ -23,6 +23,7 @@ export const skills = [
     { name: "Vue.js", category: SkillCategory.Frontend },
     { name: "PHP", category: SkillCategory.Backend  },
     { name: "Symfony", category: SkillCategory.Backend  },
+    { name: "Python", category: SkillCategory.Backend  },
     { name: "MongoDB", category: SkillCategory.Database },
     { name: "Cassandra", category: SkillCategory.Database },
     { name: "Tailwind CSS", category: SkillCategory.Frontend },
