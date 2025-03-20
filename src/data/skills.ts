@@ -12,6 +12,7 @@ export interface Skill {
 }
 
 export const skills = [
+    { name: "Méthodes Agiles (SCRUM)", category: SkillCategory.Methodology },
     { name: "Git", category: SkillCategory.Tools },
     { name: "Docker", category: SkillCategory.Tools },
     { name: "React", category: SkillCategory.Frontend },
@@ -27,7 +28,6 @@ export const skills = [
     { name: "Cassandra", category: SkillCategory.Database },
     { name: "Tailwind CSS", category: SkillCategory.Frontend },
     { name: "Python", category: SkillCategory.Backend  },
-    { name: "Méthodes Agiles (SCRUM)", category: SkillCategory.Methodology },
 ]
 
 export const skillCategories = {
