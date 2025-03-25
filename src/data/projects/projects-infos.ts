@@ -51,6 +51,14 @@ export const projectsInfo: ProjectInfoInterface[] = [
         id: 3,
         longDescription:
             "Cette version étendue d’un célèbre jeu de société permet aux joueurs de construire des routes ferroviaires et maritimes pour relier des destinations à travers le globe. À l’aide de cartes de transport, ils doivent compléter leurs billets de destination en reliant des villes avec des trains et des bateaux. À chaque tour, ils peuvent piocher des cartes, construire une route ou prendre de nouveaux objectifs. Le but est d’optimiser ses trajets tout en bloquant ses adversaires. Nous avons réalisé ce projet à deux.",
+        images: [
+            "/images/projects/aventuriers-rails/1-launcher.png",
+            "/images/projects/aventuriers-rails/2-choixCouleur.png",
+            "/images/projects/aventuriers-rails/3-prendreRoute.webp",
+            "/images/projects/aventuriers-rails/4-routePrise.webp",
+            "/images/projects/aventuriers-rails/5-Erreur.webp"
+            
+        ],
         challenges: [
             "Découverte du frontend",
             "Faire une interface ergonomique",
