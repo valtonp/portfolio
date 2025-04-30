@@ -23,8 +23,17 @@ const education = [
 
 const experience = [
     {
+        id: 2,
+        title: "Stage Développeur Full-Stack",
+        company: "Crédit Agricole Group Infrastructure Platform (CA-GIP)",
+        date: "Avril 2025 - Août 2025",
+        description:
+            "Mise en place d'une application sous k8s pour automatiser et vérifier des informations pour les DevOps",
+        icon: <Code className="h-5 w-5" />,
+    },
+    {
         id: 1,
-        title: "Conception de processus métier",
+        title: "Stage Conception de processus métier",
         company: "Nexecur",
         date: "Avril 2024 - Juin 2024",
         description:
