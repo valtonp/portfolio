@@ -9,10 +9,10 @@ const inter = Inter({subsets: ["latin"]})
 export const metadata: Metadata = {
     title: "Paul Valton | Développeur Full Stack",
     description: "Portfolio de Paul Valton, développeur full stack",
-    keywords: "Paul Valton, Développeur Full Stack, Next.js, NestJS, JavaScript, TypeScript, Portfolio",
+    keywords: "Paul Valton, Développeur Full Stack, Next.js, NestJS, JavaScript, TypeScript, Portfolio, Java",
     openGraph: {
         title: "Paul Valton | Développeur Full Stack",
-        description: "Découvrez mon portfolio de développeur full stack spécialisé en Next.js, NestJS et Tailwind.",
+        description: "Découvrez mon portfolio de développeur full stack",
         url: "https://mypaulfolio.vercel.app/",
         siteName: "Paul Valton Portfolio",
         type: "website",
