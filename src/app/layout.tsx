@@ -17,9 +17,6 @@ export const metadata: Metadata = {
         siteName: "Paul Valton Portfolio",
         type: "website",
     },
-    verification: {
-        google: "I0QFD6knafI1oiz1KnSRPCUslRVonYJfAft1-JY7oN8"
-    },
 };
 
 export default function RootLayout({
